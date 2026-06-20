@@ -1,0 +1,14 @@
+{
+  "name": "peniel-llm-proxy",
+  "version": "0.1.0",
+  "description": "Local proxy for LLM-backed devotional generation",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "express": "^4.18.2",
+    "node-fetch": "^2.6.7"
+  }
+}

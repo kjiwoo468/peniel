@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Register — Peniel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css" />
+  <style>
+    .auth-container {
+      max-width: 400px;
+      margin: 4rem auto;
+      padding: 2rem;
+      background: var(--card);
+      border-radius: var(--r-lg);
+      box-shadow: var(--shadow-md);
+    }
+    .auth-container h2 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+      color: var(--ink);
+    }
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+    .form-group label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+      color: var(--ink-soft);
+    }
+    .form-group input {
+      width: 100%;
+      padding: 0.75rem;
+      border: 1px solid var(--ink-faint);
+      border-radius: var(--r-md);
+      font-family: var(--font-body);
+      font-size: 1rem;
+      transition: border-color 0.2s;
+    }
+    .form-group input:focus {
+      outline: none;
+      border-color: var(--gold);
+    }
+    .btn-primary {
+      width: 100%;
+      padding: 0.75rem;
+      background: var(--gold);
+      color: white;
+      border: none;
+      border-radius: var(--r-md);
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .btn-primary:hover {
+      background: var(--gold-dark);
+    }
+    .auth-links {
+      text-align: center;
+      margin-top: 1.5rem;
+      font-size: 0.9rem;
+    }
+    .auth-links a {
+      color: var(--gold);
+      text-decoration: none;
+    }
+    .auth-links a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+<header class="site-header">
+  <div class="site-header__inner">
+    <a class="brand" href="index.html">
+      <img src="assets/logo.png" class="brand__img" alt="Peniel logo" />
+      <span><span class="brand__name">Peniel</span><span class="brand__tagline">Wrestling with God</span></span>
+    </a>
+  </div>
+</header>
+
+<div class="auth-container">
+  <h2>Create Your Account</h2>
+  <form id="registerForm">
+    <div class="form-group">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" required placeholder="Enter your full name">
+    </div>
+    <div class="form-group">
+      <label for="email">Email Address</label>
+      <input type="email" id="email" required placeholder="Enter your email">
+    </div>
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" id="password" required placeholder="Create a password" minlength="6">
+    </div>
+    <div class="form-group">
+      <label for="confirmPassword">Confirm Password</label>
+      <input type="password" id="confirmPassword" required placeholder="Confirm your password" minlength="6">
+    </div>
+    <button type="submit" class="btn-primary">Register</button>
+  </form>
+  <div class="auth-links">
+    <p>Already have an account? <a href="login.html">Login here</a></p>
+    <p><a href="index.html">← Back to Home</a></p>
+  </div>
+</div>
+
+<script src="assets/script.js"></script>
+<script>
+  // Handle registration form submission
+  document.getElementById('registerForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    const name = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const password = document.getElementById('password').value;
+    const confirmPassword = document.getElementById('confirmPassword').value;
+    
+    // Validation
+    if (password !== confirmPassword) {
+      alert('Passwords do not match. Please try again.');
+      return;
+    }
+    
+    if (password.length < 6) {
+      alert('Password must be at least 6 characters long.');
+      return;
+    }
+    
+    // Check if user already exists
+    const users = JSON.parse(localStorage.getItem('hq_users') || '[]');
+    const existingUser = users.find(u => u.email === email);
+    
+    if (existingUser) {
+      alert('An account with this email already exists. Please login instead.');
+      return;
+    }
+    
+    // Create new user
+    const newUser = {
+      id: Date.now().toString(),
+      name: name,
+      email: email,
+      password: password // In a real app, this would be hashed
+    };
+    
+    users.push(newUser);
+    localStorage.setItem('hq_users', JSON.stringify(users));
+    
+    // Auto-login after registration
+    localStorage.setItem('hq_currentUser', JSON.stringify({
+      id: newUser.id,
+      email: newUser.email,
+      name: newUser.name
+    }));
+    
+    alert('Registration successful! Welcome to Hard Questions.');
+    window.location.href = 'index.html';
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Peniel — Wrestling with God</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css" />
+  <style>
+    .progress-dot{font-family:var(--font-mono);font-size:.65rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-faint);margin-left:auto;flex-shrink:0;}
+    .progress-dot.is-done{color:var(--sage);font-weight:700;}
+    .progress-dot.is-prog{color:var(--amber);}
+  </style>
+</head>
+<body>
+<header class="site-header">
+  <div class="site-header__inner">
+    <a class="brand" href="index.html">
+      <img src="assets/logo.png" class="brand__img" alt="Peniel logo" />
+      <span><span class="brand__name">Peniel</span><span class="brand__tagline">Wrestling with God</span></span>
+    </a>
+    <nav class="site-nav" aria-label="Main">
+      <a href="index.html" class="is-active">Home</a>
+      <div class="dropdown">
+        <a href="scripture.html" class="drop-trigger">Scripture</a>
+        <div class="dropdown-menu">
+          <a href="inerrancy.html">Biblical Inerrancy</a>
+          <a href="contradictions.html">Biblical Contradictions</a>
+          <a href="canon.html">The Biblical Canon</a>
+          <a href="textual-criticism.html">Textual Criticism &amp; Famous Variants</a>
+          <a href="translations.html">Translation Controversies</a>
+          <a href="documentary-hypothesis.html">The Documentary Hypothesis</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="ethics.html" class="drop-trigger">Ethics</a>
+        <div class="dropdown-menu">
+          <a href="homosexuality.html">Homosexuality &amp; Same-Sex Relationships</a>
+          <a href="women-ministry.html">Women in Church Leadership</a>
+          <a href="divorce.html">Divorce &amp; Remarriage</a>
+          <a href="abortion.html">Abortion: What the Bible Actually Says</a>
+          <a href="wealth-poverty.html">Wealth, Poverty &amp; the Prosperity Gospel</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="history.html" class="drop-trigger">History</a>
+        <div class="dropdown-menu">
+          <a href="slavery.html">Slavery in the Bible</a>
+          <a href="holy-war.html">Holy War &amp; Divine Violence</a>
+          <a href="curse-of-ham.html">Race &amp; the Curse of Ham</a>
+          <a href="exodus-history.html">The Historical Exodus</a>
+          <a href="conquest-archaeology.html">The Conquest of Canaan &amp; Archaeology</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="salvation.html" class="drop-trigger">Salvation</a>
+        <div class="dropdown-menu">
+          <a href="hell.html">The Nature of Hell</a>
+          <a href="predestination.html">Predestination vs. Free Will</a>
+          <a href="exclusivism.html">Is Jesus the Only Way?</a>
+          <a href="rapture.html">The Rapture: Origins &amp; Debate</a>
+          <a href="infant-salvation.html">What Happens to Infants Who Die?</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="science.html" class="drop-trigger">Science</a>
+        <div class="dropdown-menu">
+          <a href="creation-evolution.html">Creation &amp; Evolution</a>
+          <a href="age-of-earth.html">Age of Earth</a>
+          <a href="noahs-flood.html">Noah's Flood</a>
+          <a href="miracles.html">Miracles</a>
+          <a href="faith-science-history.html">Faith &amp; Science History</a>
+        </div>
+      </div>
+    </nav>
+    <div class="auth-links">
+      <a href="login.html">Login</a>
+      <a href="register.html">Register</a>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <img src="assets/hero-image.png" alt="Open book with golden light and plants" class="hero__bg" />
+  <div class="hero__inner">
+    <p class="eyebrow" style="color:var(--gold);">A devotional study in 26 controversialtopics</p>
+    <h1>Wrestling with <em>Hard&nbsp;Questions</em></h1>
+    <p class="hero__lede">Regardless of our individual beliefs, all Christians are unified in our belief in God, the LORD and our SAVIOR. We are meant to wrestle with the hard questions, the conflicting perspectives, and the dark times when our faith is shaky. To wrestle with God is not to dishonor Him. To wrestle with God is not to question Him. To wrestle with God is to believe in Him. This devotional site was created for Christians and non-Christians of any faith to address head-on the most controversial Bible and Christianity topics of the 21st century.</p>
+    <blockquote class="hero__verse">"And Jacob called the name of the place Peniel: for I have seen God face to face, and my life is preserved."<cite>Genesis 32:30</cite></blockquote>
+    <div class="hero__actions">
+      <button id="newsButton" class="btn btn--gold" type="button">Show latest Christian news summary</button>
+    </div>
+  </div>
+  <div class="wave-divider" aria-hidden="true">
+    <svg viewBox="0 0 1440 90" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,60 C360,100 720,20 1080,70 C1260,95 1380,50 1440,60 L1440,90 L0,90 Z" fill="#faf7f0"/>
+    </svg>
+  </div>
+</section>
+<section class="section section--news-summary" aria-labelledby="news-summary-heading">
+  <div class="wrap">
+    <div id="newsSummary" class="news-summary">
+      <div class="news-summary__empty">
+        <p><strong>Want the latest Christian news?</strong></p>
+        <p>Click the button above to load a fresh summary from a trusted Christian news feed.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<main>
+<section class="section">
+<div class="wrap">
+  <div class="idx-layout">
+    <div class="idx-main">
+      <div class="topics-header">
+        <div class="topics-header__left">
+          <p class="eyebrow">Browse by category</p>
+          <h2 style="font-size:clamp(1.7rem,3vw,2.3rem);margin:.3rem 0 .5rem;">Choose a topic</h2>
+        </div>
+
+      </div>
+      <p class="lede" style="max-width:60ch;margin-bottom:1.6rem;">Select any category to see all its topics, or jump directly to a topic below.</p>
+
+      <div class="idx-grid">
+
+        <div class="idx-cat">
+      <div class="idx-cat__head"><div class="idx-cat__icon">📖</div><div>
+        <h3>Scripture &amp; Interpretation</h3>
+        <p>How the Bible was written, assembled, copied, translated — and how we should read it.</p>
+      </div></div>
+      <div class="idx-cat__topics">
+        <a class="idx-cat__topic-link" href="inerrancy.html" data-progress-id="inerrancy" data-total="6">Biblical Inerrancy <span class="progress-dot"></span></a>
+        <a class="idx-cat__topic-link" href="contradictions.html" data-progress-id="contradictions" data-total="5">Biblical Contradictions <span class="progress-dot"></span></a>
+        <a class="idx-cat__topic-link" href="canon.html" data-progress-id="canon" data-total="5">The Biblical Canon <span class="progress-dot"></span></a>
+        <a class="idx-cat__topic-link" href="textual-criticism.html" data-progress-id="textual-criticism" data-total="6">Textual Criticism &amp; Famous Variants <span class="progress-dot"></span></a>
+        <a class="idx-cat__topic-link" href="translations.html" data-progress-id="translations" data-total="5">Translation Controversies <span class="progress-dot"></span></a>
+        <a class="idx-cat__topic-link" href="documentary-hypothesis.html" data-progress-id="documentary-hypothesis" data-total="5">The Documentary Hypothesis <span class="progress-dot"></span></a>
+      </div>
+      <div class="idx-cat__footer"><a href="scripture.html">View all Scripture topics &rarr;</a></div>
+    </div>
+
+    <div class="idx-cat">
+      <div class="idx-cat__head"><div class="idx-cat__icon">⚖️</div><div>
+        <h3>Ethics &amp; Human Sexuality</h3>
+        <p>Where the church is most visibly divided — body, gender, family, and money.</p>
+      </div></div>
+      <div class="idx-cat__topics">
+        <a class="idx-cat__topic-link" href="homosexuality.html" data-progress-id="homosexuality" data-total="6">Homosexuality &amp; Same-Sex Relationships <span class="progress-dot"></span></a>
+        <a class="idx-cat__topic-link" href="women-ministry.html" data-progress-id="women-ministry" data-total="5">Women in Church Leadership <span class="progress-dot"></span></a>
+        <a class="idx-cat__topic-link" href="divorce.html" data-progress-id="divorce" data-total="5">Divorce &amp; Remarriage <span class="progress-dot"></span></a>
+        <a class="idx-cat__topic-link" href="abortion.html" data-progress-id="abortion" data-total="5">Abortion: What the Bible Actually Says <span class="progress-dot"></span></a>
+        <a class="idx-cat__topic-link" href="wealth-poverty.html" data-progress-id="wealth-poverty" data-total="5">Wealth, Poverty &amp; the Prosperity Gospel <span class="progress-dot"></span></a>
+      </div>
+      <div class="idx-cat__footer"><a href="ethics.html">View all Ethics topics &rarr;</a></div>
+    </div>
+
+    <div class="idx-cat">
+      <div class="idx-cat__head"><div class="idx-cat__icon">⛓️</div><div>
+        <h3>History &amp; Justice</h3>
+        <p>When Scripture appears to sanction injustice — and what archaeology reveals.</p>
+      </div></div>
+      <div class="idx-cat__topics">
+        <a class="idx-cat__topic-link" href="slavery.html" data-progress-id="slavery" data-total="6">Slavery in the Bible <span class="progress-dot"></span></a>
+        <a class="idx-cat__topic-link" href="holy-war.html" data-progress-id="holy-war" data-total="5">Holy War &amp; Divine Violence <span class="progress-dot"></span></a>
+        <a class="idx-cat__topic-link" href="curse-of-ham.html" data-progress-id="curse-of-ham" data-total="5">Race &amp; the Curse of Ham <span class="progress-dot"></span></a>
+        <a class="idx-cat__topic-link" href="exodus-history.html" data-progress-id="exodus-history" data-total="5">The Historical Exodus <span class="progress-dot"></span></a>
+        <a class="idx-cat__topic-link" href="conquest-archaeology.html" data-progress-id="conquest-archaeology" data-total="5">The Conquest of Canaan &amp; Archaeology <span class="progress-dot"></span></a>
+      </div>
+      <div class="idx-cat__footer"><a href="history.html">View all History topics &rarr;</a></div>
+    </div>
+
+    <div class="idx-cat">
+      <div class="idx-cat__head"><div class="idx-cat__icon">🕊️</div><div>
+        <h3>Heaven, Hell &amp; Salvation</h3>
+        <p>Eternity, divine sovereignty, human freedom, and who gets in.</p>
+      </div></div>
+      <div class="idx-cat__topics">
+        <a class="idx-cat__topic-link" href="hell.html" data-progress-id="hell" data-total="5">The Nature of Hell <span class="progress-dot"></span></a>
+        <a class="idx-cat__topic-link" href="predestination.html" data-progress-id="predestination" data-total="5">Predestination vs. Free Will <span class="progress-dot"></span></a>
+        <a class="idx-cat__topic-link" href="exclusivism.html" data-progress-id="exclusivism" data-total="5">Is Jesus the Only Way? <span class="progress-dot"></span></a>
+        <a class="idx-cat__topic-link" href="rapture.html" data-progress-id="rapture" data-total="5">The Rapture: Origins &amp; Debate <span class="progress-dot"></span></a>
+        <a class="idx-cat__topic-link" href="infant-salvation.html" data-progress-id="infant-salvation" data-total="5">What Happens to Infants Who Die? <span class="progress-dot"></span></a>
+      </div>
+      <div class="idx-cat__footer"><a href="salvation.html">View all Salvation topics &rarr;</a></div>
+    </div>
+
+    <div class="idx-cat">
+      <div class="idx-cat__head"><div class="idx-cat__icon">🌌</div><div>
+        <h3>Faith &amp; Science</h3>
+        <p>Two books, one Author — but how do they speak to each other?</p>
+      </div></div>
+      <div class="idx-cat__topics">
+        <a class="idx-cat__topic-link" href="creation-evolution.html" data-progress-id="creation-evolution" data-total="5">Creation &amp; Evolution <span class="progress-dot"></span></a>
+        <a class="idx-cat__topic-link" href="age-of-earth.html" data-progress-id="age-of-earth" data-total="5">The Age of the Earth <span class="progress-dot"></span></a>
+        <a class="idx-cat__topic-link" href="miracles.html" data-progress-id="miracles" data-total="5">Miracles &amp; the Supernatural <span class="progress-dot"></span></a>
+        <a class="idx-cat__topic-link" href="noahs-flood.html" data-progress-id="noahs-flood" data-total="5">Noah&rsquo;s Flood: Global or Local? <span class="progress-dot"></span></a>
+        <a class="idx-cat__topic-link" href="faith-science-history.html" data-progress-id="faith-science-history" data-total="6">A History of Faith-Science Conflicts <span class="progress-dot"></span></a>
+      </div>
+      <div class="idx-cat__footer"><a href="science.html">View all Science topics &rarr;</a></div>
+    </div>
+
+      </div>
+    </div>
+
+
+  </div>
+</div>
+</section>
+
+<section class="section section--tight" style="background:var(--bg-deep);padding:3rem 0;">
+  <div class="wrap">
+    <p class="eyebrow">What makes this guide different</p>
+    <h2 style="font-size:clamp(1.5rem,3vw,2rem);margin:.3rem 0 1.2rem;">Deeper than a study Bible note</h2>
+    <div class="about-grid">
+      <div class="info-block"><h3>Translation comparisons</h3><p>For every key passage, see how the KJV, NIV, ESV, NRSV, NLT, and other major translations render it — and why the differences matter theologically.</p></div>
+      <div class="info-block"><h3>Greek &amp; Hebrew word studies</h3><p>When a single word sits at the heart of a controversy — <em>arsenokoitai</em>, <em>authentein</em>, <em>Gehenna</em>, <em>theopneustos</em> — we examine it in its original language in depth.</p></div>
+      <div class="info-block"><h3>Textual history &amp; manuscripts</h3><p>Famous misprints (the "Wicked Bible"), disputed passages (John 7:53–8:11, the long ending of Mark, the Comma Johanneum) and what the Dead Sea Scrolls changed — all discussed honestly.</p></div>
+      <div class="info-block"><h3>Archaeological evidence</h3><p>The Merneptah Stele, the archaeology of Jericho, the Tel Dan inscription, ancient Near Eastern flood narratives — physical evidence examined alongside Scripture.</p></div>
+    </div>
+    <p style="margin-top:1.4rem;font-size:.88rem;color:var(--ink-faint);">Your journal notes and reading progress are saved to this device only and never shared. <button id="clearProgress" class="btn btn--ghost btn--sm" style="margin-left:.5rem;">Clear my data</button></p>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <p><strong style="color:rgba(255,255,255,.7);">Peniel</strong> — All positions presented for education and reflection; no single view is endorsed.</p>
+    <nav style="display:flex;gap:1rem;flex-wrap:wrap;">
+      <a href="scripture.html">Scripture</a><a href="ethics.html">Ethics</a><a href="history.html">History</a><a href="salvation.html">Salvation</a><a href="science.html">Science</a>
+    </nav>
+  </div>
+</footer>
+<script src="assets/script.js"></script>
+<script>HQ.initIndex();</script>
+</body>
+</html>
