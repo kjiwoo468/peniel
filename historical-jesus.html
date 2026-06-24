@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Hard Questions</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css"/>
+</head>
+<body>
+<header class="site-header">
+  <div class="site-header__inner">
+    <a class="brand" href="index.html">
+      <img src="assets/logo.png" class="brand__img" alt="Peniel logo" />
+      <span><span class="brand__name">Peniel</span><span class="brand__tagline">Wrestling with God</span></span>
+    </a>
+    <nav class="site-nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <div class="dropdown">
+        <a href="scripture.html" class="drop-trigger is-active">Scripture</a>
+        <div class="dropdown-menu">
+          <a href="inerrancy.html">Biblical Inerrancy</a>
+          <a href="contradictions.html">Biblical Contradictions</a>
+          <a href="canon.html">The Biblical Canon</a>
+          <a href="textual-criticism.html">Textual Criticism &amp; Famous Variants</a>
+          <a href="translations.html">Translation Controversies</a>
+          <a href="documentary-hypothesis.html">The Documentary Hypothesis</a>
+          <a href="historical-jesus.html">The Historical Jesus</a>
+          <a href="messianic-prophecy.html">Messianic Prophecy &amp; Fulfillment</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="ethics.html" class="drop-trigger">Ethics</a>
+        <div class="dropdown-menu">
+          <a href="homosexuality.html">Homosexuality &amp; Same-Sex Relationships</a>
+          <a href="women-ministry.html">Women in Church Leadership</a>
+          <a href="divorce.html">Divorce &amp; Remarriage</a>
+          <a href="abortion.html">Abortion: What the Bible Actually Says</a>
+          <a href="wealth-poverty.html">Wealth, Poverty &amp; the Prosperity Gospel</a>
+          <a href="capital-punishment.html">Capital Punishment &amp; Justice</a>
+          <a href="just-war.html">Just War &amp; Christian Pacifism</a>
+          <a href="environmental-stewardship.html">Environmental Stewardship</a>
+          <a href="gender-identity.html">Gender, Identity &amp; the Body</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="history.html" class="drop-trigger">History</a>
+        <div class="dropdown-menu">
+          <a href="slavery.html">Slavery in the Bible</a>
+          <a href="holy-war.html">Holy War &amp; Divine Violence</a>
+          <a href="curse-of-ham.html">Race &amp; the Curse of Ham</a>
+          <a href="exodus-history.html">The Historical Exodus</a>
+          <a href="conquest-archaeology.html">The Conquest of Canaan &amp; Archaeology</a>
+          <a href="antisemitism.html">Anti-Semitism &amp; the Church</a>
+          <a href="crusades.html">The Crusades &amp; Christian Violence</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="salvation.html" class="drop-trigger">Salvation</a>
+        <div class="dropdown-menu">
+          <a href="hell.html">The Nature of Hell</a>
+          <a href="predestination.html">Predestination vs. Free Will</a>
+          <a href="exclusivism.html">Is Jesus the Only Way?</a>
+          <a href="rapture.html">The Rapture: Origins &amp; Debate</a>
+          <a href="infant-salvation.html">What Happens to Infants Who Die?</a>
+          <a href="atonement.html">The Atonement: How Does Jesus Save?</a>
+          <a href="baptism.html">Baptism: Mode, Meaning &amp; Necessity</a>
+          <a href="problem-of-evil.html">The Problem of Evil &amp; Suffering</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="science.html" class="drop-trigger">Science</a>
+        <div class="dropdown-menu">
+          <a href="creation-evolution.html">Creation &amp; Evolution</a>
+          <a href="age-of-earth.html">Age of Earth</a>
+          <a href="noahs-flood.html">Noah's Flood</a>
+          <a href="miracles.html">Miracles</a>
+          <a href="faith-science-history.html">Faith &amp; Science History</a>
+          <a href="spiritual-gifts.html">Spiritual Gifts &amp; Tongues</a>
+          <a href="consciousness-soul.html">Consciousness, Soul &amp; Neuroscience</a>
+          <a href="mental-health.html">Mental Health &amp; the Church</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+<div class="page-shell">
+  <div class="page-head">
+    <div><p class="eyebrow"><a href="scripture.html" style="text-decoration:none;color:inherit;">Scripture &amp; Interpretation</a></p><h1>The Historical Jesus</h1></div>
+    <a class="back-link" href="scripture.html">&larr; Scripture &amp; Interpretation</a>
+  </div>
+  <nav class="section-nav" aria-label="Section navigation">
+    <div class="section-nav__track" id="navTrack"></div>
+    <p class="section-nav__label" id="navLabel">Section <span>1</span></p>
+  </nav>
+  <div id="screenStage">
+<section class="screen" data-title="Introduction">
+  <div class="screen__kicker"><span class="eyebrow">Introduction</span><span class="badge badge--tension-med">Active scholarly debate</span></div>
+  <h2>What do non-Christian sources actually say about Jesus?</h2>
+  <p class="lede">Christianity rests on historical claims: a man named Jesus of Nazareth lived, died by crucifixion, and was reported risen. Skeptics ask whether Jesus is a myth; believers assume the historical record is obvious. The actual evidence from non-Christian sources is more interesting — and more limited — than either side typically acknowledges.</p>
+  <div class="journal-wrap"><label for="j_hj_0">Before reading: what non-biblical evidence for Jesus do you think exists, and how confident are you in the historical existence of Jesus?</label>
+  <textarea id="j_hj_0" data-key="historicaljesus_intro" placeholder="Write your honest thoughts..."></textarea><p class="save-note"></p></div>
+</section>
+<section class="screen" data-title="Roman &amp; Jewish Sources">
+  <div class="screen__kicker"><span class="eyebrow">Non-Christian Evidence</span><span class="badge badge--arch">Ancient sources</span></div>
+  <h2>What Josephus, Tacitus, and others recorded</h2>
+  <div class="arch-card"><div class="arch-card__icon">📜</div><div>
+    <span class="arch-card__date">c. 93&ndash;94 AD</span><h4>Josephus, <em>Antiquities of the Jews</em> 20.9.1</h4>
+    <p>In a passage virtually all scholars accept as authentic, Jewish historian Josephus refers to "James the brother of Jesus who was called Christ" — a casual, incidental mention that assumes the reader already knows who Jesus was. The term "called Christ" implies Josephus is citing a claim of others, not endorsing it.</p>
+  </div></div>
+  <div class="arch-card"><div class="arch-card__icon">📜</div><div>
+    <span class="arch-card__date">c. 93&ndash;94 AD</span><h4>Josephus, <em>Antiquities</em> 18.3.3 — the <em>Testimonium Flavianum</em></h4>
+    <p>A longer Josephus passage describes Jesus as "a wise man" executed by Pilate. The problem: its current form includes unmistakably Christian affirmations ("He was the Messiah," "he appeared to them alive on the third day") that Josephus, a non-Christian Jew, almost certainly did not write. Most scholars consider the passage partially authentic — a genuine Josephan core about Jesus's existence and death, with later Christian interpolations added by copyists. The original non-interpolated form was likely neutral description.</p>
+  </div></div>
+  <div class="arch-card"><div class="arch-card__icon">🏛️</div><div>
+    <span class="arch-card__date">c. 116 AD</span><h4>Tacitus, <em>Annals</em> 15.44</h4>
+    <p>Roman historian Tacitus, describing Nero's persecution of Christians after the 64 AD fire, wrote that Christians derived their name from "Christus, who had been executed in the reign of Tiberius by the procurator Pontius Pilatus." Tacitus clearly had no sympathy for Christianity (calling it a "destructive superstition") — which makes this a particularly credible independent attestation of Jesus's execution under Pilate.</p>
+  </div></div>
+  <div class="arch-card"><div class="arch-card__icon">✉️</div><div>
+    <span class="arch-card__date">c. 112 AD</span><h4>Pliny the Younger, <em>Letters</em> 10.96</h4>
+    <p>Roman governor Pliny wrote to Emperor Trajan about Christians in his province who sang hymns "to Christ as to a god" — valuable evidence for early Christian worship practice, though not direct evidence for the historical Jesus himself.</p>
+  </div></div>
+  <div class="ms-note"><p class="ms-note__label">What the non-Christian sources establish — and don't</p>
+  <p>These sources collectively confirm: a person named Jesus (or Christ) existed and was executed by Pilate in Judea under Tiberius, and that his followers spread rapidly enough to reach Rome within a generation. They do not address miracles, resurrection, or any Gospel narrative details. The silence of other Roman sources reflects how marginal events in a Roman province typically were — not how historically dubious they are.</p></div>
+</section>
+<section class="screen" data-title="Archaeological Evidence">
+  <div class="screen__kicker"><span class="eyebrow">Archaeology</span><span class="badge badge--arch">Physical evidence</span></div>
+  <h2>What archaeology has confirmed about the Gospel world</h2>
+  <div class="archaeology">
+    <div class="arch-card"><div class="arch-card__icon">🏺</div><div>
+      <span class="arch-card__date">Discovered 1961</span><h4>The Pontius Pilate Inscription (Caesarea Maritima)</h4>
+      <p>A stone inscription discovered at the Roman theater in Caesarea bears the name "Pontius Pilatus" with his title "Praefectus Iudaeae" — the first archaeological confirmation of a figure named in the Gospels as Jesus's judge. Before 1961, some scholars had questioned whether the title "procurator" in the Gospels was accurate; the inscription clarifies his actual title was "prefect."</p>
+    </div></div>
+    <div class="arch-card"><div class="arch-card__icon">⚱️</div><div>
+      <span class="arch-card__date">Discovered 1990</span><h4>The Caiaphas Ossuary (Jerusalem)</h4>
+      <p>A first-century bone box inscribed "Joseph son of Caiaphas" was discovered in a Jerusalem burial cave, almost certainly belonging to the high priest who presided over Jesus's trial according to the Gospels. While the identification is not universally accepted, it is the dominant scholarly view — another incidental archaeological confirmation of a named Gospel figure.</p>
+    </div></div>
+    <div class="arch-card"><div class="arch-card__icon">💧</div><div>
+      <span class="arch-card__date">Discovered 2004</span><h4>The Pool of Siloam (Jerusalem)</h4>
+      <p>Excavations confirmed the existence and location of the Pool of Siloam exactly where John 9:7 describes Jesus healing a blind man there. Previously known only from later Byzantine constructions, the discovery of the original first-century pool validates the Gospel's specific geographic and architectural detail.</p>
+    </div></div>
+    <div class="arch-card"><div class="arch-card__icon">🏚️</div><div>
+      <span class="arch-card__date">Ongoing excavations</span><h4>Nazareth and Capernaum</h4>
+      <p>First-century Nazareth was long dismissed as too obscure to be a real town. Archaeological work now confirms a small first-century Jewish village at the site, consistent with Gospel descriptions. Capernaum excavations have revealed a first-century synagogue beneath a later structure, alongside what may be the house of Simon Peter.</p>
+    </div></div>
+  </div>
+</section>
+<section class="screen" data-title="Scholars">
+  <div class="screen__kicker"><span class="eyebrow">Scholarly Perspectives</span></div>
+  <h2>What historians say about the historical Jesus</h2>
+  <div class="scholar-quote"><p class="scholar-quote__text">Whatever we think about the resurrection or the miracles, the existence of Jesus of Nazareth as a historical figure is not seriously disputed by credentialed historians — including agnostic and atheist ones. The "Christ myth" theory has no traction in professional ancient history because the evidence, while limited, is exactly what we would expect for a provincial figure from this period and place.</p>
+  <p class="scholar-quote__attribution">Bart Ehrman<span>University of North Carolina; agnostic New Testament historian; author of <em>Did Jesus Exist?</em> (2012)</span></p></div>
+  <div class="scholar-quote"><p class="scholar-quote__text">The Testimonium Flavianum almost certainly contains an authentic Josephan core about Jesus — a neutral, descriptive reference to a figure Josephus treated as historically real — into which later Christian scribes inserted overtly theological claims. Recognizing the interpolations does not eliminate the authentic historical reference beneath them.</p>
+  <p class="scholar-quote__attribution">John P. Meier<span>University of Notre Dame; author of <em>A Marginal Jew: Rethinking the Historical Jesus</em> (5 vols., 1991&ndash;2016)</span></p></div>
+  <div class="scholar-quote"><p class="scholar-quote__text">The criterion of embarrassment — asking what early Christians would have been unlikely to invent — is among the most useful tools for identifying historical bedrock. The baptism of Jesus by John (implying subordination), the desertion of the disciples, and the cry of dereliction from the cross ("My God, my God, why have you forsaken me?") are exactly the kind of material a faith community would not fabricate.</p>
+  <p class="scholar-quote__attribution">N.T. Wright<span>University of St Andrews; author of <em>Jesus and the Victory of God</em> (1996)</span></p></div>
+  <div class="scholar-quote"><p class="scholar-quote__text">The independent agreement across Paul's early letters (written within 20 years of the crucifixion), the Synoptic tradition, John, and Q — all pointing to the same named individual in the same historical setting — provides a stronger historical foundation for Jesus than for many figures whose historicity is unquestioned.</p>
+  <p class="scholar-quote__attribution">John Dominic Crossan<span>DePaul University; co-founder of the Jesus Seminar; author of <em>The Historical Jesus</em> (1991)</span></p></div>
+</section>
+<section class="screen" data-title="Positions">
+  <div class="screen__kicker"><span class="eyebrow">Scholarly Positions</span></div>
+  <h2>The spectrum of historical Jesus scholarship</h2>
+  <div class="positions">
+    <div class="position position--a"><span class="position__tag">Maximalist Historical View</span><h4>The Gospels preserve reliable historical memory</h4>
+    <p>While acknowledging the Gospels are theological documents, not court transcripts, this view holds they preserve accurate historical memory of Jesus's words and deeds, testable against archaeology and parallel sources. The early date of Paul's letters (within 20 years of Jesus's death) provides a strong historical foundation. <em>N.T. Wright, Craig Evans, Craig Keener.</em></p></div>
+    <div class="position position--b"><span class="position__tag">Critical Scholarship</span><h4>The historical Jesus is recoverable, but differs from the Christ of faith</h4>
+    <p>Using criteria of historical criticism (multiple attestation, dissimilarity, embarrassment), scholars can identify a historical Jesus — a Jewish prophet and teacher — distinct from the later theological portrait of the Gospels. The Church's Christology developed after Easter; the pre-Easter Jesus was more modest in self-presentation. <em>Dominant view in mainstream New Testament scholarship.</em></p></div>
+    <div class="position position--c"><span class="position__tag">Minimalist Scholarship</span><h4>Very little about Jesus can be known with confidence</h4>
+    <p>The sources are too theologically motivated to recover the historical Jesus in any detail. What we can say is minimal: a Jewish figure was executed in Judea in the early first century whose followers formed a movement. Everything else is theological construction. <em>More skeptical wing of the Jesus Seminar tradition.</em></p></div>
+    <div class="position position--d"><span class="position__tag">Christ Myth Theory</span><h4>Jesus never existed as a historical person</h4>
+    <p>A fringe view with negligible academic support: Jesus was entirely mythological, perhaps a dying-and-rising deity adapted into a historical narrative. Rejected by virtually all professional ancient historians, including secular ones, on the grounds that the evidence falls easily within normal ancient historical parameters. <em>Richard Carrier, Robert Price; widely criticized even by critical scholars.</em></p></div>
+  </div>
+  <div class="journal-wrap"><label for="j_hj_5">Does the historical evidence for Jesus strengthen, weaken, or leave unchanged your faith? What would it mean to you if historians were confident Jesus existed but did not rise?</label>
+  <textarea id="j_hj_5" data-key="historicaljesus_close" placeholder="Write your thoughts..."></textarea><p class="save-note"></p></div>
+  <div class="conclusion-card"><p class="eyebrow" style="color:var(--gold);margin-bottom:.4rem;">Up next in Scripture</p><h2>Messianic Prophecy &amp; Fulfillment</h2>
+  <p>Did the Hebrew prophets predict Jesus? Isaiah 53, Micah 5:2, and how fulfillment actually works.</p>
+  <div class="conclusion-card__actions"><a class="btn btn--gold" href="messianic-prophecy.html">Continue &rarr;</a><a class="btn btn--ghost" style="border-color:rgba(255,255,255,.4);color:rgba(255,255,255,.8);" href="scripture.html">Back to Scripture topics</a></div></div>
+</section>
+  </div>
+  <div class="screen-controls">
+    <button class="btn btn--ghost" id="prevBtn">&larr; Back</button>
+    <div class="progress-bar"><div class="progress-bar__fill" id="progressFill"></div></div>
+    <button class="btn" id="nextBtn">Next &rarr;</button>
+  </div>
+  <div style="display:flex;gap:.8rem;flex-wrap:wrap;margin-top:1.4rem;">
+    <a class="btn btn--ghost" href="documentary-hypothesis.html">&larr; The Documentary Hypothesis</a>
+    <a class="btn btn--gold" href="messianic-prophecy.html">Messianic Prophecy &rarr;</a>
+  </div>
+</div>
+<script src="assets/script.js"></script>
+<script>HQ.initPage('historical-jesus');HQ.initJournal();</script>
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <p>Hard Questions &mdash; all positions presented for education and reflection; no single view is endorsed.</p>
+    <a href="index.html">&larr; Home</a>
+  </div>
+</footer>
+</body></html>
